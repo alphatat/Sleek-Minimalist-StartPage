@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for a more refined look and animations */
+        body {
+            font-family:'Courier New', Courier, monospace;
+            background-color: #0d0013; /* Darker background */
+            color: #d400ff; /* Lighter text for contrast */
+            transition: background-color 0.5s ease;
+        }
+        .hide-name {
+            display: none;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .search-input {
+            background-color: #1E1E1E; /* A slightly lighter dark gray */
+            border: 1px solid #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .bookmark-item {
+            background-color: #1E1E1E;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+        }
+
+        .bookmark-item:hover {
+            background-color: #430993a0;
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 8px 16px rgba(223, 24, 241, 0.3);
+        }
+        .bookmark-item:hover img {
+            /* Example: purple filter */
+            filter: invert(0%) sepia(98%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(101%);
+        }
+        .bookmark-item img {
+            /* Example: purple filter */
+            filter: invert(34%) sepia(98%) saturate(7496%) hue-rotate(266deg) brightness(90%) contrast(101%);
+        }
+        .add-bookmark-btn {
+            border: 2px dashed #ad4ae2;
+            color: #ad4ae2;
+            transition: all 0.3s ease;
+        }
+
+        .add-bookmark-btn:hover {
+            background-color: #b44ae2;
+            color: #000000;
+            transform: scale(1.05);
+            border: 2px dashed #000000;
+        }
+
+        .modal-content {
+            background-color: #1E1E1E;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            .bookmark-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        /* Keyframe animations for the greeting and time */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Applying the animations */
+        #greeting {
+            animation: fadeInDown 1s ease-out;
+        }
+
+        #currentTime {
+            animation: fadeInUp 1s ease-out 0.3s forwards; /* 'forwards' keeps the final state */
+        }
+        
+        .search-toggle-btn {
+            padding: 8px 16px;
+            border-radius: 9999px; /* This makes it pill-shaped */
+            background-color: #262526;
+            color: #a9a9a9;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+
+        }
+        
+        .search-toggle-btn:hover {
+            background-color: #2D2D2D;
+            color: #a97dcf;
+            box-shadow: 0 4px 12px rgba(130, 46, 241, 0.3);
+            transform: translateY(2px);
+        }
+        
+        .active-search-btn {
+            background-color: #33045d;
+            color: #9700cf;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(130, 46, 241, 0.3);
+            transform: translateY(-3px);
+        }        
+        
+        /* New Styles for Hotcorners */
+        .hotcorner {
+            position: fixed;
+            width: 40px; /* Size of the activation area */
+            height: 40px;
+            z-index: 50; /* Below modals */
+            opacity: 0;
+        }
+
+        .hotcorner-top-left { top: 0; left: 0; }
+        .hotcorner-top-right { top: 0; right: 0; }
+        .hotcorner-bottom-left { bottom: 0; left: 0; }
+        .hotcorner-bottom-right { bottom: 0; right: 0; }
+        
+        /* New Styles for Hotcorner Modals */
+        .hotcorner-modal {
+            background-color: #0d0013; /* Same as body */
+            border: 2px solid #b44ae2;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(160, 74, 226, 0.5);
+            width: 400px; /* Fixed width for a quadrant-like appearance */
+            z-index: 100; /* Above hotcorners */    
+        }
+
+        .hotcorner-modal.top-left { top: 20px; left: 20px; }
+        .hotcorner-modal.top-right { top: 20px; right: 20px; }
+        .hotcorner-modal.bottom-left { bottom: 20px; left: 20px; }
+        .hotcorner-modal.bottom-right { bottom: 20px; right: 20px; }
+
+        .hotcorner-add-btn {
+            border: 2px dashed #ad4ae2;
+            color: #ad4ae2;
+            transition: all 0.3s ease;
+        }
+        .hotcorner-add-btn:hover {
+            background-color: #b44ae2;
+            color: #000000;
+            transform: scale(1.05);
+            border: 2px dashed #000000;
+        }
+        
+    </style>
+</head>
+<body class="bg--900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="flex justify-center space-x-2 mb-6">
+        <button type="button" id="googleBtn" class="search-toggle-btn active-search-btn">Google</button>
+        <button type="button" id="youtubeBtn" class="search-toggle-btn">YouTube</button>
+        <button type="button" id="duckduckgoBtn" class="search-toggle-btn">DuckDuckGo</button>
+        <button type="button" id="githubBtn" class="search-toggle-btn">GitHub</button>
+        <button type="button" id="bingBtn" class="search-toggle-btn">Bing</button>
+        <button type="button" id="braveBtn" class="search-toggle-btn">Brave</button>
+        <button type="button" id="yahooBtn" class="search-toggle-btn">Yahoo</button>
+        <button type="button" id="wikipediaBtn" class="search-toggle-btn">Wikipedia</button>
+        <button type="button" id="startpageBtn" class="search-toggle-btn">Startpage</button>
+        <button type="button" id="aolBtn" class="search-toggle-btn">AOL</button>
+        <button type="button" id="ecosiaBtn" class="search-toggle-btn">Ecosia</button>
+    </div>
+    <div class="container w-full max-w-2xl space-y-10">
+        <div class="text-center">
+            <h3 id="greeting" class="text-3xl md:text-3xl font-extralight tracking-tight animate-fade-in-down"></h3>
+            <h4 id="currentTime" class="text-2xl md:text-2xl text-gray-400 mt-2 font-thin opacity-0 animate-fade-in-up"></h4>
+        </div>
+
+        <form id="searchForm" class="flex justify-center w-full" data-search-url="https://www.google.com/search?q=">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search with Google..." 
+                class="search-input w-full p-4 rounded-full text-lg placeholder-gray-500 focus:outline-none focus:ring-0"
+            >
+        </form>
+
+        <div id="bookmarkGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bookmark-grid">
+            <button id="addBookmarkBtn" class="add-bookmark-btn p-4 rounded-xl text-center flex items-center justify-center flex-col">
+                <svg class="w-8 h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <span class="text-sm font-semibold">Add Site</span>
+            </button>
+        </div>
+    </div>
+    
+    <div id="hotcornerTL" class="hotcorner hotcorner-top-left"></div>
+    <div id="hotcornerTR" class="hotcorner hotcorner-top-right"></div>
+    <div id="hotcornerBL" class="hotcorner hotcorner-bottom-left"></div>
+    <div id="hotcornerBR" class="hotcorner hotcorner-bottom-right"></div>
+
+    <div id="hotcornerModalTL" class="fixed hidden hotcorner-modal top-left">
+        <div class="p-8 rounded-xl w-full">
+            <div id="hotcornerGridTL" class="grid grid-cols-4 grid-cols-4 gap-2"></div>
+        </div>
+    </div>
+
+    <div id="hotcornerModalTR" class="fixed hidden hotcorner-modal top-right">
+        <div class="p-8 rounded-xl w-full">
+            <div id="hotcornerGridTR" class="grid grid-cols-4 grid-cols-4 gap-2"></div>
+        </div>
+    </div>
+
+    <div id="hotcornerModalBL" class="fixed hidden hotcorner-modal bottom-left">
+        <div class="p-5 rounded-x w-full">
+            <div id="hotcornerGridBL" class="grid grid-cols-4 grid-cols-4 gap-2"></div>
+        </div>
+    </div>
+
+    <div id="hotcornerModalBR" class="fixed hidden hotcorner-modal bottom-right">
+        <div class="p-8 rounded-xl w-full">
+            <div id="hotcornerGridBR" class="grid grid-cols-4 grid-cols-4 gap-2"></div>
+        </div>
+    </div>
+
+    <div id="bookmarkModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 transition-opacity duration-300 hidden">
+        <div class="modal-content p-8 rounded-xl w-full max-w-sm shadow-2xl">
+            <h2 class="text-2xl font-light mb-6 text-center">Add New Bookmark</h2>
+            <form id="bookmarkForm" class="space-y-4">
+                <div>
+                    <label for="siteName" class="block text-gray-400 text-sm mb-1">Site Name</label>
+                    <input 
+                        type="text" 
+                        id="siteName" 
+                        placeholder="e.g., YouTube" 
+                        class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors"
+                    >
+                </div>
+                <div>
+                    <label for="siteUrl" class="block text-gray-400 text-sm mb-1">Site URL</label>
+                    <input 
+                        type="url" 
+                        id="siteUrl" 
+                        placeholder="e.g., https://www.youtube.com" 
+                        class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors"
+                    >
+                </div>
+                <div class="flex justify-end space-x-3 mt-6">
+                    <button type="button" id="cancelBtn" class="bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-lg transition-colors">Cancel</button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-400 px-5 py-2 rounded-lg transition-colors">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="siteIcons.js"></script>
+
+<script>
+    console.log(siteIcons);
+    // Define the search engine URLs
+    const searchEngines = {
+        google: "https://www.google.com/search?q=",
+        youtube: "https://www.youtu.be/results?search_query=",
+        duckduckgo: "https://duckduckgo.com/?q=",
+        github: "https://github.com/search?q=",
+        bing: "https://www.bing.com/search?q=",
+        brave: "https://search.brave.com/search?q=",
+        yahoo: "https://search.yahoo.com/search?p=",
+        wikipedia: "https://en.wikipedia.org/w/index.php?search=",
+        startpage: "https://www.startpage.com/do/dsearch?query=",
+        aol: "https://search.aol.com/aol/search?q=",
+        ecosia: "https://www.ecosia.org/search?q=",
+    };
+
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchInput");
+    const searchToggleButtons = document.querySelectorAll(".search-toggle-btn");
+    const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+
+    // Fix: Prevent cursor from hiding
+    document.body.style.cursor = 'default';
+
+    searchForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const query = searchInput.value.trim();
+        const searchUrl = searchForm.dataset.searchUrl;
+        if (query && searchUrl) {
+            window.location.href = searchUrl + encodeURIComponent(query);
+        }
+    });
+
+    // Last Used Search Engine Functionality
+    function saveLastSearchEngine(engineId) {
+        localStorage.setItem("lastSearchEngine", engineId);
+    }
+
+    function loadLastSearchEngine() {
+        const lastEngineId = localStorage.getItem("lastSearchEngine");
+        if (lastEngineId) {
+            const lastEngineButton = document.getElementById(lastEngineId);
+            if (lastEngineButton) {
+                lastEngineButton.click();
+            }
+        }
+    }
+
+    // Event listener for search engine buttons
+    searchToggleButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            searchToggleButtons.forEach(btn => btn.classList.remove("active-search-btn"));
+            button.classList.add("active-search-btn");
+
+            let newUrl;
+            if (button.id === "youtubeBtn") {
+                newUrl = searchEngines.youtube;
+                searchInput.placeholder = "Search YouTube...";
+            } else if (button.id === "duckduckgoBtn") {
+                newUrl = searchEngines.duckduckgo;
+                searchInput.placeholder = "Search DuckDuckGo...";
+            } else if (button.id === "bingBtn") {
+                newUrl = searchEngines.bing;
+                searchInput.placeholder = "Search with Bing...";
+            } else if (button.id === "braveBtn") {
+                newUrl = searchEngines.brave;
+                searchInput.placeholder = "Search with Brave...";
+            } else if (button.id === "yahooBtn") {
+                newUrl = searchEngines.yahoo;
+                searchInput.placeholder = "Search Yahoo...";
+            } else if (button.id === "wikipediaBtn") {
+                newUrl = searchEngines.wikipedia;
+                searchInput.placeholder = "Search Wikipedia...";
+            } else if (button.id === "startpageBtn") {
+                newUrl = searchEngines.startpage;
+                searchInput.placeholder = "Search Startpage...";
+            } else if (button.id === "aolBtn") {
+                newUrl = searchEngines.aol;
+                searchInput.placeholder = "Search AOL...";
+            } else if (button.id === "ecosiaBtn") {
+                newUrl = searchEngines.ecosia;
+                searchInput.placeholder = "Search Ecosia...";
+            } else if (button.id === "githubBtn") {
+                newUrl = searchEngines.github;
+                searchInput.placeholder = "Search GitHub...";
+            } else {
+                newUrl = searchEngines.google;
+                searchInput.placeholder = "Search with Google...";
+            }
+            searchForm.dataset.searchUrl = newUrl;
+            saveLastSearchEngine(button.id);
+        });
+    });
+
+    // Dynamic Greeting & Clock
+    function updateDisplay() {
+        const now = new Date();
+        const hour = now.getHours();
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        
+        let greetingText;
+        if (hour < 12) greetingText = "Good Morning";
+        else if (hour < 18) greetingText = "Good Afternoon";
+        else greetingText = "Good Evening";
+        
+        document.getElementById("greeting").textContent = greetingText;
+        document.getElementById("currentTime").textContent = `${hour % 12 || 12}:${minutes}`;
+    }
+
+    // Main Bookmark Management
+    const bookmarkGrid = document.getElementById("bookmarkGrid");
+    const addBookmarkBtn = document.getElementById("addBookmarkBtn");
+    const bookmarkModal = document.getElementById("bookmarkModal");
+    const bookmarkForm = document.getElementById("bookmarkForm");
+    const siteNameInput = document.getElementById("siteName");
+    const siteUrlInput = document.getElementById("siteUrl");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    function loadBookmarks() {
+        const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        bookmarks.forEach(bookmark => createBookmarkElement(bookmark.name, bookmark.url, bookmarkGrid));
+    }
+
+    function createBookmarkElement(name, url, parentGrid, isHotcorner = false) {
+        const bookmark = document.createElement("a");
+        bookmark.href = url;
+        bookmark.target = "_blank";
+        bookmark.className = "bookmark-item p-4 text-center relative group flex flex-col items-center justify-center";
+
+        const iconPath = siteIcons[name.toLowerCase().trim()] || null;
+
+        // Always create the span for the name
+        const span = document.createElement("span");
+        span.className = "truncate";
+
+        // Use <img> for the icon, with a filter for color
+        if (iconPath) {
+            const img = document.createElement("img");
+            img.src = iconPath;
+            img.alt = name + " icon";
+            img.className = "w-16 h-16 mr-0 inline-block";
+            // Apply a purple color filter (adjust as needed)
+          //  img.style.filter = "invert(34%) sepia(98%) saturate(7496%) hue-rotate(266deg) brightness(90%) contrast(101%)";
+            bookmark.appendChild(img);
+            span.className = "text-xs"
+            
+            if(!isHotcorner) {
+            span.textContent = name;
+            }
+            
+        }
+        else {
+            span.textContent = name;
+        }
+
+        bookmark.appendChild(span);
+
+        const removeBtn = document.createElement("button");
+        removeBtn.className = "remove-btn hidden group-hover:block absolute top-2 right-2 text-red-400 hover:text-red-500 transition-colors duration-200";
+        removeBtn.innerHTML = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`;
+
+        removeBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (isHotcorner) {
+                removeHotcornerBookmark(name, url, parentGrid.id);
+            } else {
+                removeBookmark(name, url);
+            }
+            bookmark.style.opacity = '0';
+            bookmark.style.transform = 'scale(0.8)';
+            setTimeout(() => bookmark.remove(), 300);
+        });
+
+        bookmark.appendChild(removeBtn);
+
+        if (parentGrid.id === "bookmarkGrid") {
+            parentGrid.insertBefore(bookmark, addBookmarkBtn);
+        } else {
+            parentGrid.appendChild(bookmark);
+        }
+        addGlowEffect(bookmark);
+    }
+
+    function saveBookmark(name, url) {
+        const bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        bookmarks.push({ name, url });
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    }
+
+    function removeBookmark(name, url) {
+        let bookmarks = JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        bookmarks = bookmarks.filter(bookmark => bookmark.name !== name || bookmark.url !== url);
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    }
+
+    addBookmarkBtn.addEventListener("click", () => {
+        bookmarkModal.classList.remove("hidden");
+        bookmarkModal.style.opacity = '0';
+        setTimeout(() => bookmarkModal.style.opacity = '1', 10);
+        siteNameInput.value = "";
+        siteUrlInput.value = "";
+    });
+
+    cancelBtn.addEventListener("click", () => {
+        bookmarkModal.style.opacity = '0';
+        setTimeout(() => bookmarkModal.classList.add("hidden"), 300);
+    });
+
+   // Modify the main bookmark form submission to handle hotcorners
+    bookmarkForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const gridId = bookmarkModal.dataset.gridId;
+        const name = siteNameInput.value.trim();
+        let url = siteUrlInput.value.trim();
+        if (!name || !url) {
+            alert("Please enter both a site name and URL.");
+            return;
+        }
+        if (!url.startsWith("http://") && !url.startsWith("https://")) {
+            url = "https://" + url;
+        }
+        try { new URL(url); } catch { alert("Please enter a valid URL."); return; }
+        
+        if (gridId) { // Check if we are in a hotcorner modal
+            saveHotcornerBookmark(name, url, gridId);
+            loadHotcornerBookmarks(gridId);
+            delete bookmarkModal.dataset.gridId; // Clean up
+        } else {
+            saveBookmark(name, url);
+            createBookmarkElement(name, url, bookmarkGrid);
+        }
+        
+        bookmarkModal.classList.add("hidden");
+    });
+    
+
+    // Hotcorner Bookmark Management
+    function loadHotcornerBookmarks(gridId) {
+        const bookmarks = JSON.parse(localStorage.getItem(gridId) || "[]");
+        const grid = document.getElementById(gridId);
+        grid.innerHTML = "";
+        bookmarks.forEach(bookmark => createBookmarkElement(bookmark.name, bookmark.url, grid, true));
+        // Add the 'Add Site' button to the hotcorner grid
+        const addButton = document.createElement('button');
+        addButton.id = `addHotcornerBtn_${gridId.replace('hotcornerGrid', '')}`;
+        addButton.className = 'hotcorner-add-btn p-4 rounded-xl text-center relative flex items-center justify-center flex-col w-full';
+        addButton.innerHTML = `<span class="text-sm font-bold">Add Site</span>`;
+        addButton.addEventListener('click', () => {
+            showAddBookmarkModal(gridId);
+        });
+        grid.appendChild(addButton);
+    }
+
+    function saveHotcornerBookmark(name, url, gridId) {
+        const bookmarks = JSON.parse(localStorage.getItem(gridId) || "[]");
+        bookmarks.push({ name, url });
+        localStorage.setItem(gridId, JSON.stringify(bookmarks));
+    }
+
+    function removeHotcornerBookmark(name, url, gridId) {
+        let bookmarks = JSON.parse(localStorage.getItem(gridId) || "[]");
+        bookmarks = bookmarks.filter(b => b.name !== name || b.url !== url);
+        localStorage.setItem(gridId, JSON.stringify(bookmarks));
+    }
+
+    // Show the add bookmark modal for hotcorners
+    function showAddBookmarkModal(gridId) {
+        const modal = document.getElementById('bookmarkModal');
+        modal.classList.remove('hidden');
+        modal.dataset.gridId = gridId; // Store the grid ID for later
+        siteNameInput.value = "";
+        siteUrlInput.value = "";
+    }
+
+ 
+    // Hotcorner Logic
+    const hotcornerModals = {
+        'hotcornerTL': 'hotcornerModalTL',
+        'hotcornerTR': 'hotcornerModalTR',
+        'hotcornerBL': 'hotcornerModalBL',
+        'hotcornerBR': 'hotcornerModalBR',
+    };
+
+    const hotcornerGrids = {
+        'hotcornerTL': 'hotcornerGridTL',
+        'hotcornerTR': 'hotcornerGridTR',
+        'hotcornerBL': 'hotcornerGridBL',
+        'hotcornerBR': 'hotcornerGridBR',
+    };
+
+    Object.keys(hotcornerModals).forEach(cornerId => {
+        const cornerDiv = document.getElementById(cornerId);
+        const modalId = hotcornerModals[cornerId];
+        const modalDiv = document.getElementById(modalId);
+
+        // Show modal on mouse enter
+        cornerDiv.addEventListener('mouseenter', () => {
+            Object.values(hotcornerModals).forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+            const gridId = hotcornerGrids[cornerId];
+            loadHotcornerBookmarks(gridId);
+            modalDiv.classList.remove('hidden');
+        });
+
+        // Hide modal when mouse leaves both the hotcorner and the modal
+        function hideModal(e) {
+            // Only hide if mouse is not moving to the modal or the hotcorner
+            if (
+                !cornerDiv.contains(e.relatedTarget) &&
+                !modalDiv.contains(e.relatedTarget)
+            ) {
+                modalDiv.classList.add('hidden');
+            }
+        }
+
+        cornerDiv.addEventListener('mouseleave', hideModal);
+        modalDiv.addEventListener('mouseleave', hideModal);
+    });
+
+    // New: Glow effect
+    function addGlowEffect(element) {
+        element.addEventListener('mousemove', (e) => {
+            const rect = element.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            element.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(160, 74, 226, 0.4), transparent 50%)`;
+        });
+        element.addEventListener('mouseleave', () => {
+            element.style.backgroundImage = 'none';
+        });
+    }
+
+    // Apply glow to buttons and existing bookmarks
+    searchToggleButtons.forEach(addGlowEffect);
+    document.getElementById('searchInput').addEventListener('mousemove', (e) => {
+        const rect = e.target.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        e.target.style.boxShadow = `0 0 15px rgba(160, 74, 226, 0.5), 0 0 20px 5px rgba(160, 74, 226, 0.2) inset`;
+        e.target.style.borderColor = '#a84ae2';
+    });
+    document.getElementById('searchInput').addEventListener('mouseleave', (e) => {
+        e.target.style.boxShadow = `0 4px 12px rgba(0, 0, 0, 0.2)`;
+        e.target.style.borderColor = '#333';
+    });
+
+    // Initial setup
+    updateDisplay();
+    setInterval(updateDisplay, 60000);
+    loadBookmarks();
+    loadLastSearchEngine();
+</script>
+</body>
+</html>
