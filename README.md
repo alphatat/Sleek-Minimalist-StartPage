@@ -26,3 +26,29 @@
     4. load unpacked from the folder
 - Firefox
     
+## Setup
+- There is a settings button at the top right
+    - use it and edit some colors the first time to make it work properly
+    - change colors
+- now add some bookmarks (your browsers exported bookmark can be imported by parsing at first)
+    - bookmarks take their icon by their name, so only give simple names like
+        - Facebook
+        - googlegemini
+        - whatsapp
+        - instagram
+     otherwise the icons will not be available
+    - search here to know which icons are available and to get the names
+        -[https://simpleicons.org/](https://simpleicons.org/)  
+  
+  and done.....
+
+
+  ## Keyboard power
+  ### there are some shortcuts.
+  - ###"//g" or "//y" and so on will change the search options to goolge or youtube and so on
+  - ###"/1" or "/2" will speeddial the first and the second bookmark in your main bookmark tab
+ 
+  ## Credits
+ - svg color filter. Barrett Sonntag at codepen [@sosuke](https://codepen.io/sosuke) [code](https://codepen.io/sosuke/pen/Pjoqqp)
+ - Focusing the searchbar fix. Some fellow from StackOverflow. ThankYou but cant find your name. basically the problem is not solved rater an error is evoked to reload the page and get the focus back
+ - icons 
