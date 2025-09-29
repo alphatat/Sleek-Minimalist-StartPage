@@ -58,5 +58,12 @@ Thank you all....
 ## Looks
 ### Animations
 ![Animations](https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/animations.gif)
+### Shortcuts
+![Shortcuts](https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/shortcuts.gif)
+### Fonts
+![Fonts](https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/fonts.gif)
+### Colors
+![Colors](https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/color.gif)
+
 
 
