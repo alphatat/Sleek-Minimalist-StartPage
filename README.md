@@ -1,6 +1,6 @@
 # Sleek StartPage
   <img src="https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/start.gif" 
-       style="position: absolute; inset-inline-start: 40px; inset-block-start: 40px; width: 576px; height: 294px; z-index: 10;">
+       style="position: absolute; inset-inline-start: 1000px; inset-block-start: 40px; width: 576px; height: 294px; z-index: 10;">
 
 ## Discription
 
