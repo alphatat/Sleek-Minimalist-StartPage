@@ -1,0 +1,260 @@
+
+/* Custom CSS for a more refined look and animations */
+:root {
+  --bg-color: #0d0013; /* Dark background */
+  --text-color: #b0b0b0; /* Light text */
+  --accent-color: #6c29bd; /* Accent color */
+  --accentras-color: #bb86fc80; /* Accent color with transparency */
+  --hover-bg-color: #1f1f1f; /* Hover background */
+  --border-color: #333; /* Border color */
+  --btn-bg-color: #1e1e1e; /* Button background */
+  --box-sdw-color: #ffffff33; /* Box shadow color */
+  --hover-bg-color-txt: #5c0b92; /* Hover text color */
+  --font-size-base: 16px;
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  transition: background-color 0.5s ease;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 600px;
+  padding: .4rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.search-input {
+  background-color: var(--btn-bg-color); /* A slightly lighter dark gray */
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  box-shadow: 0 4px 12px var(--box-sdw-color);
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px var(--accentras-color), 0 0 20px 5px var(--box-sdw-color) inset;
+}
+
+.search-input:hover {
+  border-color: var(--text-color);
+  box-shadow: 0 0 15px var(--accent-color), 0 0 20px 5px var(--box-sdw-color) inset;
+
+
+}
+
+
+.bookmark-item {
+  color: var(--hover-bg-color-txt);
+  background-color: var(--btn-bg-color);
+  border-radius: 12px;
+
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+}
+
+
+.bookmark-item:hover {
+  background-color: var(--hover-bg-color);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px var(--accent-color);
+  color: var(--bg-color);
+}
+
+
+
+.add-bookmark-btn {
+  border: 2px dashed var(--accent-color);
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.add-bookmark-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  border: 2px dashed var(--bg-color);
+}
+
+.modal-content {
+  background-color: var(--btn-bg-color);
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding: 4rem;
+  }
+  .bookmark-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
+/* Keyframe animations for the greeting and time */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applying the animations */
+#greeting {
+  animation: fadeInDown 2s ease-out;
+}
+
+#currentTime {
+  animation: fadeInUp 2s ease-out 0.5s forwards; /* 'forwards' keeps the final state */
+}
+
+.search-toggle-btn {
+  padding: 8px 16px;
+  border-radius: 9999px; /* This makes it pill-shaped */
+  background-color: var(--btn-bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out, padding 0.5s ease-in-out;
+  border: 1px solid transparent;
+  font-weight: 900;
+}
+
+.search-toggle-btn:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--background-color);
+  box-shadow: 0 4px 12px var(--accentras-color);
+  transform: translateY(2px);
+}
+
+.active-search-btn {
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: 0 4px 12px var(--accentras-color);
+  transform: translateY(-5px);
+}
+
+/* New Styles for Hotcorners */
+.hotcorner {
+  position: fixed;
+  width: 140px; /* Size of the activation area */
+  height: 140px;
+  z-index: 50; /* Below modals */
+  opacity: 0;
+}
+
+.hotcorner-top-left {
+  top: 0;
+  left: 0;
+}
+.hotcorner-top-right {
+  top: 0;
+  right: 0;
+}
+.hotcorner-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.hotcorner-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+/* New Styles for Hotcorner Modals */
+.hotcorner-modal {
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  box-shadow: 0 0 30px var(--accentras-color);
+  width: 400px; /* Fixed width for a quadrant-like appearance */
+  z-index: 100; /* Above hotcorners */
+}
+
+.hotcorner-modal.top-left {
+  top: 20px;
+  left: 20px;
+}
+.hotcorner-modal.top-right {
+  top: 20px;
+  right: 20px;
+}
+.hotcorner-modal.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+.hotcorner-modal.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.hotcorner-add-btn {
+  border: 2px dashed var(--accent-color);
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+.hotcorner-add-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  border: 2px dashed var(--bg-color);
+}
+.settings-Btn {
+  color: var(--hover-bg-color-txt);
+  background-color: #00000000;
+}
+
+.settings-Btn:hover {
+  transform: scale(1.15) rotate(20deg);
+  color: var(--text-color);
+}
+
+#greeting {
+  color: var(--text-color);
+}
+#currentTime {
+  color: var(--hover-bg-color-txt);
+}

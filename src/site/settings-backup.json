@@ -1,0 +1,782 @@
+{
+  "bookmarks": [
+    {
+      "name": "tomshardwareforums",
+      "url": "https://forums.tomshardware.com"
+    },
+    {
+      "name": "padlet",
+      "url": "https://padlet.com"
+    },
+    {
+      "name": "openstax",
+      "url": "https://openstax.org"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "mega",
+      "url": "https://mega.nz"
+    },
+    {
+      "name": "devworkersghostalifdarkmatterproduction",
+      "url": "https://production.darkmatter.ghostalif.workers.dev"
+    },
+    {
+      "name": "elephantsql",
+      "url": "https://www.elephantsql.com"
+    },
+    {
+      "name": "circleftpindex",
+      "url": "http://index.circleftp.net"
+    },
+    {
+      "name": "pcgamingwiki",
+      "url": "https://www.pcgamingwiki.com"
+    },
+    {
+      "name": "zorinos",
+      "url": "https://zorinos.com"
+    },
+    {
+      "name": "google",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "nvidia",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "name": "aternos",
+      "url": "https://aternos.org"
+    },
+    {
+      "name": "ibmcloud",
+      "url": "https://cloud.ibm.com"
+    },
+    {
+      "name": "gmail",
+      "url": "https://mail.google.com"
+    },
+    {
+      "name": "mail",
+      "url": "https://mail.tm"
+    },
+    {
+      "name": "pastebin",
+      "url": "https://pastebin.com"
+    },
+    {
+      "name": "mediafire",
+      "url": "https://www.mediafire.com"
+    },
+    {
+      "name": "wikipedia",
+      "url": "https://en.wikipedia.org"
+    },
+    {
+      "name": "imdb",
+      "url": "https://www.imdb.com"
+    },
+    {
+      "name": "vpngate",
+      "url": "https://www.vpngate.net"
+    },
+    {
+      "name": "mitocw",
+      "url": "https://ocw.mit.edu"
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com"
+    },
+    {
+      "name": "telegraph",
+      "url": "https://telegra.ph"
+    },
+    {
+      "name": "kickasstorrent",
+      "url": "https://thekickasstorrents.to"
+    },
+    {
+      "name": "nyaa",
+      "url": "https://nyaa.si"
+    },
+    {
+      "name": "myanonamouse",
+      "url": "https://www.myanonamouse.net"
+    },
+    {
+      "name": "googledrive",
+      "url": "https://tv.googledrivelinks.com"
+    },
+    {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com"
+    },
+    {
+      "name": "lcc",
+      "url": "https://www.lcc.edu"
+    },
+    {
+      "name": "zoro",
+      "url": "https://zoro.to"
+    },
+    {
+      "name": "xreactor",
+      "url": "https://xreactor.org"
+    },
+    {
+      "name": "uploadhaven",
+      "url": "https://uploadhaven.com"
+    },
+    {
+      "name": "rentry",
+      "url": "https://rentry.co"
+    },
+    {
+      "name": "blackhatworld",
+      "url": "https://www.blackhatworld.com"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com"
+    },
+    {
+      "name": "cbsnews",
+      "url": "https://www.cbsnews.com"
+    },
+    {
+      "name": "nytimes",
+      "url": "https://www.nytimes.com"
+    },
+    {
+      "name": "nbcnews",
+      "url": "https://www.nbcnews.com"
+    },
+    {
+      "name": "kremlinen",
+      "url": "http://en.kremlin.ru"
+    },
+    {
+      "name": "bbc",
+      "url": "https://www.bbc.com"
+    },
+    {
+      "name": "bloomberg",
+      "url": "https://www.bloomberg.com"
+    },
+    {
+      "name": "globaltimes",
+      "url": "https://www.globaltimes.cn"
+    },
+    {
+      "name": "theguardian",
+      "url": "https://www.theguardian.com"
+    },
+    {
+      "name": "geonode",
+      "url": "https://geonode.com"
+    },
+    {
+      "name": "codeforces",
+      "url": "https://codeforces.com"
+    },
+    {
+      "name": "canva",
+      "url": "https://www.canva.com"
+    },
+    {
+      "name": "rapidapi",
+      "url": "https://rapidapi.com"
+    },
+    {
+      "name": "googlescholar",
+      "url": "https://scholar.google.com"
+    },
+    {
+      "name": "hostbyet",
+      "url": "https://byet.host"
+    },
+    {
+      "name": "stanfordonline",
+      "url": "https://online.stanford.edu"
+    },
+    {
+      "name": "harvardpll",
+      "url": "https://pll.harvard.edu"
+    },
+    {
+      "name": "hacksnation",
+      "url": "https://hacksnation.com"
+    },
+    {
+      "name": "rivestream",
+      "url": "https://rivestream.org"
+    },
+    {
+      "name": "devpagesheartive",
+      "url": "https://heartive.pages.dev"
+    },
+    {
+      "name": "trendshift",
+      "url": "https://trendshift.io"
+    },
+    {
+      "name": "miruro",
+      "url": "https://www.miruro.tv"
+    },
+    {
+      "name": "zenprivacy",
+      "url": "https://zenprivacy.net"
+    },
+    {
+      "name": "torrminatorrforum",
+      "url": "https://forum.torrminatorr.com"
+    },
+    {
+      "name": "gitlab",
+      "url": "https://gitlab.com"
+    },
+    {
+      "name": "githubgist",
+      "url": "https://gist.github.com"
+    },
+    {
+      "name": "kgb-hosting",
+      "url": "https://www.kgb-hosting.com"
+    },
+    {
+      "name": "hackgence",
+      "url": "https://hackgence.com"
+    },
+    {
+      "name": "filthybooks",
+      "url": "https://www.filthybooks.com"
+    },
+    {
+      "name": "circleftpftp15",
+      "url": "http://ftp15.circleftp.net"
+    },
+    {
+      "name": "circleftpftp11",
+      "url": "http://ftp11.circleftp.net"
+    },
+    {
+      "name": "mobilismforum",
+      "url": "https://forum.mobilism.org"
+    },
+    {
+      "name": "comicextra",
+      "url": "https://comicextra.net"
+    },
+    {
+      "name": "opensusesoftware",
+      "url": "https://software.opensuse.org"
+    },
+    {
+      "name": "libdriveconfig",
+      "url": "https://config.libdrive.tk"
+    },
+    {
+      "name": "watchasianwww1",
+      "url": "https://www1.watchasian.id"
+    },
+    {
+      "name": "bdys03",
+      "url": "https://www.bdys03.com"
+    },
+    {
+      "name": "ghostbin",
+      "url": "https://ghostbin.me"
+    },
+    {
+      "name": "pathaomerchant",
+      "url": "https://merchant.pathao.com"
+    },
+    {
+      "name": "xeonbdmirror",
+      "url": "https://mirror.xeonbd.com"
+    },
+    {
+      "name": "ebanglalibrary",
+      "url": "https://www.ebanglalibrary.com"
+    },
+    {
+      "name": "googlebooks",
+      "url": "https://books.google.com"
+    },
+    {
+      "name": "kworb",
+      "url": "https://kworb.net"
+    },
+    {
+      "name": "bdebooksbn",
+      "url": "https://bn.bdebooks.com"
+    },
+    {
+      "name": "granthagara",
+      "url": "https://granthagara.com"
+    },
+    {
+      "name": "torrentgalaxy",
+      "url": "https://torrentgalaxy.to"
+    },
+    {
+      "name": "onehack",
+      "url": "https://onehack.us"
+    },
+    {
+      "name": "devftuapps",
+      "url": "https://ftuapps.dev"
+    },
+    {
+      "name": "ccmovielair",
+      "url": "https://movielair.cc"
+    },
+    {
+      "name": "aisheeter",
+      "url": "https://sheeter.ai"
+    },
+    {
+      "name": "itch",
+      "url": "https://itch.io"
+    },
+    {
+      "name": "annas-archive",
+      "url": "https://annas-archive.org"
+    },
+    {
+      "name": "worldcatsearch",
+      "url": "https://search.worldcat.org"
+    },
+    {
+      "name": "devworkersabidalifdeaddrive",
+      "url": "https://deaddrive.abidalif.workers.dev"
+    },
+    {
+      "name": "planetebook",
+      "url": "https://www.planetebook.com"
+    },
+    {
+      "name": "121217121103",
+      "url": "http://103.121.217.121"
+    },
+    {
+      "name": "mitmitxonline",
+      "url": "https://mitxonline.mit.edu"
+    },
+    {
+      "name": "filepursuit",
+      "url": "https://filepursuit.com"
+    },
+    {
+      "name": "softarchive",
+      "url": "https://softarchive.is"
+    },
+    {
+      "name": "euknaben",
+      "url": "https://knaben.eu"
+    },
+    {
+      "name": "annas-archive",
+      "url": "https://annas-archive.li"
+    },
+    {
+      "name": "academictorrents",
+      "url": "https://academictorrents.com"
+    },
+    {
+      "name": "audioaz",
+      "url": "https://audioaz.com"
+    },
+    {
+      "name": "ravebooksearch",
+      "url": "https://ravebooksearch.com"
+    },
+    {
+      "name": "recherche-ebook",
+      "url": "https://recherche-ebook.fr"
+    },
+    {
+      "name": "limoethliber3",
+      "url": "https://liber3.eth.limo"
+    },
+    {
+      "name": "learnoutloud",
+      "url": "https://www.learnoutloud.com"
+    },
+    {
+      "name": "blogspotultimatebloggerguide",
+      "url": "https://ultimatebloggerguide.blogspot.com"
+    },
+    {
+      "name": "blogspotdemo-ultimatebloggerguide",
+      "url": "https://demo-ultimatebloggerguide.blogspot.com"
+    },
+    {
+      "name": "blogspotblogger-learning-rab",
+      "url": "https://blogger-learning-rab.blogspot.com"
+    },
+    {
+      "name": "10web",
+      "url": "https://10web.io"
+    },
+    {
+      "name": "toolscobalt",
+      "url": "https://cobalt.tools"
+    },
+    {
+      "name": "ctgfunftp",
+      "url": "http://ftp.ctgfun.com"
+    },
+    {
+      "name": "streammojaloss",
+      "url": "https://www.mojaloss.stream"
+    },
+    {
+      "name": "moetheindex",
+      "url": "https://theindex.moe"
+    },
+    {
+      "name": "taptap",
+      "url": "https://www.taptap.io"
+    },
+    {
+      "name": "apkaward",
+      "url": "https://apkaward.com"
+    },
+    {
+      "name": "mirahezecloudstream",
+      "url": "https://cloudstream.miraheze.org"
+    },
+    {
+      "name": "fmhy",
+      "url": "https://fmhy.net"
+    },
+    {
+      "name": "cs",
+      "url": "https://teachyourselfcs.com"
+    },
+    {
+      "name": "phys",
+      "url": "https://phys.org"
+    },
+    {
+      "name": "bookracy",
+      "url": "https://bookracy.ru"
+    },
+    {
+      "name": "t",
+      "url": "https://t.me"
+    },
+    {
+      "name": "banglalinkcorporatecare",
+      "url": "https://corporatecare.banglalink.net"
+    },
+    {
+      "name": "blogspotbanglapdffree",
+      "url": "https://banglapdffree.blogspot.com"
+    },
+    {
+      "name": "biohaters",
+      "url": "https://biohaters.com"
+    },
+    {
+      "name": "pathagar",
+      "url": "https://www.pathagar.org"
+    },
+    {
+      "name": "aapathshala",
+      "url": "https://aapathshala.com"
+    },
+    {
+      "name": "mvgroupforums",
+      "url": "https://forums.mvgroup.org"
+    },
+    {
+      "name": "euthe-eye",
+      "url": "https://the-eye.eu"
+    },
+    {
+      "name": "forcoder",
+      "url": "https://forcoder.net"
+    },
+    {
+      "name": "mobisfile",
+      "url": "https://sfile.mobi"
+    },
+    {
+      "name": "infogogotaku",
+      "url": "https://gogotaku.info"
+    },
+    {
+      "name": "theodinproject",
+      "url": "https://www.theodinproject.com"
+    },
+    {
+      "name": "githubeylenburg",
+      "url": "https://eylenburg.github.io"
+    },
+    {
+      "name": "tonymacx86",
+      "url": "https://www.tonymacx86.com"
+    },
+    {
+      "name": "devpub",
+      "url": "https://pub.dev"
+    },
+    {
+      "name": "mitopenlearninglibrary",
+      "url": "https://openlearninglibrary.mit.edu"
+    },
+    {
+      "name": "devpostgketurns10",
+      "url": "https://gketurns10.devpost.com"
+    },
+    {
+      "name": "devpostopenai",
+      "url": "https://openai.devpost.com"
+    },
+    {
+      "name": "grok",
+      "url": "https://grok.com"
+    },
+    {
+      "name": "pixeldrain",
+      "url": "https://pixeldrain.com"
+    },
+    {
+      "name": "gog-games",
+      "url": "https://gog-games.to"
+    }
+  ],
+  "hotcornerGridTL": [
+    {
+      "name": "googleaccounts",
+      "url": "https://accounts.google.com"
+    },
+    {
+      "name": "youtube",
+      "url": "https://youtube.com"
+    },
+    {
+      "name": "googledrive",
+      "url": "https://drive.google.com"
+    },
+    {
+      "name": "googlemaps",
+      "url": "https://maps.google.com"
+    },
+    {
+      "name": "googletranslate",
+      "url": "https://translate.google.com"
+    },
+    {
+      "name": "freegamesdl",
+      "url": "https://www.freegamesdl.net"
+    },
+    {
+      "name": "ctgmovies",
+      "url": "http://ctgmovies.com"
+    },
+    {
+      "name": "circleftp",
+      "url": "http://circleftp.net"
+    },
+    {
+      "name": "45016172",
+      "url": "http://172.16.50.4"
+    },
+    {
+      "name": "ftpbd",
+      "url": "http://ftpbd.net"
+    },
+    {
+      "name": "ccseedr",
+      "url": "https://www.seedr.cc"
+    },
+    {
+      "name": "55016172",
+      "url": "http://172.16.50.5"
+    },
+    {
+      "name": "ftpbdserver5",
+      "url": "http://server5.ftpbd.net"
+    },
+    {
+      "name": "123",
+      "url": "https://chatgpt.com/"
+    }
+  ],
+  "hotcornerGridTR": [
+    {
+      "name": "ftpbdserver4",
+      "url": "http://server4.ftpbd.net"
+    },
+    {
+      "name": "circleftpftp4",
+      "url": "http://ftp4.circleftp.net"
+    },
+    {
+      "name": "163cg",
+      "url": "https://cg.163.com"
+    },
+    {
+      "name": "cadetcollegeblog",
+      "url": "https://cadetcollegeblog.com"
+    },
+    {
+      "name": "ftpbdmedia",
+      "url": "http://media.ftpbd.net"
+    },
+    {
+      "name": "ign",
+      "url": "https://www.ign.com"
+    },
+    {
+      "name": "1012222172",
+      "url": "http://172.22.22.101"
+    },
+    {
+      "name": "1818152103",
+      "url": "http://103.152.18.18"
+    },
+    {
+      "name": "nbd-media",
+      "url": "https://nbd-media.tk"
+    },
+    {
+      "name": "alphamediazoneemby",
+      "url": "http://emby.alphamediazone.com"
+    },
+    {
+      "name": "9anime",
+      "url": "https://9anime.me"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com"
+    },
+    {
+      "name": "kenecolordata",
+      "url": "http://data.kenecolor.com"
+    }
+  ],
+  "hotcornerGridBL": [
+    {
+      "name": "ctgfundl",
+      "url": "http://dl.ctgfun.com"
+    },
+    {
+      "name": "mangogamers",
+      "url": "https://mangogamers.com"
+    },
+    {
+      "name": "devworkers609index",
+      "url": "https://index.609.workers.dev"
+    },
+    {
+      "name": "devworkersal-nomanabdullah",
+      "url": "https://abdullah.al-noman.workers.dev"
+    },
+    {
+      "name": "circleftpftp3",
+      "url": "http://ftp3.circleftp.net"
+    },
+    {
+      "name": "googledocs",
+      "url": "https://docs.google.com"
+    },
+    {
+      "name": "googleresearchcolab",
+      "url": "https://colab.research.google.com"
+    },
+    {
+      "name": "pmolmsdspace",
+      "url": "https://dspace.lms.pmo.gov.bd"
+    },
+    {
+      "name": "pmolmskoha",
+      "url": "https://koha.lms.pmo.gov.bd"
+    },
+    {
+      "name": "daraz",
+      "url": "https://www.daraz.com.bd"
+    },
+    {
+      "name": "theaudiobookbay",
+      "url": "https://theaudiobookbay.se"
+    },
+    {
+      "name": "10fastfingers",
+      "url": "https://10fastfingers.com"
+    },
+    {
+      "name": "keybr",
+      "url": "https://www.keybr.com"
+    }
+  ],
+  "hotcornerGridBR": [
+    {
+      "name": "aniwave",
+      "url": "https://aniwave.to"
+    },
+    {
+      "name": "shodan",
+      "url": "https://www.shodan.io"
+    },
+    {
+      "name": "328202144",
+      "url": "http://144.202.8.32"
+    },
+    {
+      "name": "865715969",
+      "url": "http://69.159.57.86"
+    },
+    {
+      "name": "magazinelib",
+      "url": "https://magazinelib.com"
+    },
+    {
+      "name": "gutenberg",
+      "url": "https://www.gutenberg.org"
+    },
+    {
+      "name": "manybooks",
+      "url": "https://manybooks.net"
+    },
+    {
+      "name": "161488571",
+      "url": "http://71.85.48.161"
+    },
+    {
+      "name": "14821625467",
+      "url": "http://67.254.216.148"
+    },
+    {
+      "name": "105231240117",
+      "url": "http://117.240.231.105"
+    },
+    {
+      "name": "1655154103",
+      "url": "http://103.154.55.16"
+    },
+    {
+      "name": "audiobookbay",
+      "url": "https://audiobookbay.is"
+    },
+    {
+      "name": "17317212122",
+      "url": "http://122.212.17.173"
+    },
+    {
+      "name": "gsmarena",
+      "url": "https://www.gsmarena.com.bd"
+    }
+  ],
+  "font": "'JetBrains Mono', monospace",
+  "paletteIndex": "10"
+}

@@ -1,0 +1,73 @@
+
+/* Settings Drawer */
+#settingsPanel {
+  position: fixed;
+  top: 0;
+  width: 480px;
+  right: -480px; /* Hidden by default */
+  height: 100%;
+  background-color: #1E1E1E;
+  border-left: 2px solid #ad4ae2;
+  box-shadow: -4px 0 20px rgba(160,74,226,0.3);
+  overflow-y: auto;
+  transition: right 0.4s ease;
+  z-index: 200;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+#settingsPanel.active { right: 0; }
+
+#settingsOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 150;
+  display: none;
+}
+
+#settingsOverlay.active { display: block; }
+
+#settingsPanel h2 { color: #cccccc; margin-bottom: 20px; }
+#settingsPanel h3 { color: #c084fc; font-weight: 900;}
+
+#settingsPanel ul li {
+  background-color: #262626;
+  border-radius: 20px;
+  padding: 4px 8px;
+  cursor: move;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  width: 48.5%;
+
+}
+#settingsPanel ul li:hover { background-color: #430993a0; transform: translateY(-3px); }
+
+.drag-over { 
+  background-color: #33045d !important; 
+  border: 2px dashed #ad4ae2; 
+  border-radius: 20px;
+}
+
+
+.butt-sett {
+  background-color: #646464a0;
+  transition: all 0.3s ease-in-out;
+}
+.butt-sett:hover {
+  background-color: #646464fd;
+}
+
+.butt-sett-active {
+  background-color: #cccccccc;
+  border: 2px solid #6f00ff;
+}
+
+.settings-Btn {
+  opacity: 0.3;
+  z-index: 90;
+}
+
+.settings-Btn:hover {
+  opacity: 1;
+}

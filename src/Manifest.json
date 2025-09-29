@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "SleekStartpage",
+  "version": "1.0",
+  "description": "A minimalist startpage or new Tab page to get the job done.",
+  "chrome_url_overrides": {
+    "newtab": "site/index.html"
+  },
+
+
+  "permissions": [
+    "storage",
+    "scripting"  
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["site/**"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "icons": {
+    "64": "icon48.png",
+    "128": "icon128.png"
+  }
+}
