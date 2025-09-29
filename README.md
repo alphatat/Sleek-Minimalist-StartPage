@@ -1,8 +1,12 @@
 # Sleek StartPage
-<div style="position: relative;">
-  <img src="https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/start.gif" 
-       style="position: absolute; inset-inline-start: 1000px; inset-block-start: 40px; width: 576px; height: 294px; z-index: 10;">
-</div>
+# Sleek StartPage
+
+<img src="https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/main/gifs/start.gif" width="576" height="294">
+
+## Description
+
+### A Firefox and Chrome addon that gives you a minimalist and keyboard-powered speed-dial startpage
+
 ## Discription
 
 ### A firefox and chrome addon that gives you a minimalist and keyboard powered speeddial startpage
