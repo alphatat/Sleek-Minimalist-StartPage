@@ -54,3 +54,9 @@
  - icons: [https://simpleicons.org/](https://simpleicons.org/) you guys are the best.. [git repo](https://github.com/simple-icons/simple-icons)
 Thank you all....
 
+
+## Looks
+### Animations
+![Animations](https://github.com/alphatat/Sleek-Minimalist-StartPage/blob/main/gifs/animations.gif)
+
+
