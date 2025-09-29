@@ -49,6 +49,8 @@
   ### - "/1" or "/2" will speeddial the first and the second bookmark in your main bookmark tab
  
   ## Credits
- - svg color filter. Barrett Sonntag at codepen [@sosuke](https://codepen.io/sosuke) [code](https://codepen.io/sosuke/pen/Pjoqqp)
+ - svg color filter. Barrett Sonntag at codepen [@sosuke](https://codepen.io/sosuke) . the [code](https://codepen.io/sosuke/pen/Pjoqqp).
  - Focusing the searchbar fix. Some fellow from StackOverflow. ThankYou but cant find your name. basically the problem is not solved rater an error is evoked to reload the page and get the focus back
- - icons 
+ - icons: [https://simpleicons.org/](https://simpleicons.org/) you guys are the best.. [git repo](https://github.com/simple-icons/simple-icons)
+Thank you all....
+
