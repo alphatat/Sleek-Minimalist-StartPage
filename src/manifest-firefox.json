@@ -1,29 +1,26 @@
 {
   "manifest_version": 2,
   "name": "SleekStartpage",
-  "version": "1.0",
+  "version": "0.0.1",
+  "author": "alphaTat",
   "description": "A minimalist startpage or new Tab page to get the job done.",
-
   "chrome_url_overrides": {
-    "newtab": "site  },
-
+    "newtab": "site/index.html"
+  },
   "permissions": [
     "storage"
   ],
-
   "web_accessible_resources": [
-    "site  ],
-
+    "site/*"
+  ],
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
   },
-
   "applications": {
     "gecko": {
-      "id": "sleekstartpage@example.com",
+      "id": "sleekstartpage@alphatat.com",
       "strict_min_version": "91.0"
     }
   }
 }
-
