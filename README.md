@@ -38,15 +38,15 @@
         - instagram
      otherwise the icons will not be available
     - search here to know which icons are available and to get the names
-        -[https://simpleicons.org/](https://simpleicons.org/)  
+      [https://simpleicons.org/](https://simpleicons.org/)  
   
   and done.....
 
 
   ## Keyboard power
   ### there are some shortcuts.
-  - ###"//g" or "//y" and so on will change the search options to goolge or youtube and so on
-  - ###"/1" or "/2" will speeddial the first and the second bookmark in your main bookmark tab
+  ### - "//g" or "//y" and so on will change the search options to goolge or youtube and so on
+  ### - "/1" or "/2" will speeddial the first and the second bookmark in your main bookmark tab
  
   ## Credits
  - svg color filter. Barrett Sonntag at codepen [@sosuke](https://codepen.io/sosuke) [code](https://codepen.io/sosuke/pen/Pjoqqp)
