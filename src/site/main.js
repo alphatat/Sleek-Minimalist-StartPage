@@ -49,7 +49,7 @@ function createBookmarkElement(name, url, parentGrid, isHotcorner = false) {
   if (isHotcorner) {
     bookmark.classList.add("p-[5px]");
   } else {
-    bookmark.classList.add("py-4", "truncate", "px-6");
+    bookmark.classList.add("py-4", "truncate", "px-1");
     bookUrls.push(url);
   }
   const iconPath = siteIcons[name.toLowerCase().trim()] || null;
