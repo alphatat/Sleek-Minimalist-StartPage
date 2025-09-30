@@ -1,105 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sleek Homepage</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=JetBrains+Mono&family=Roboto+Mono&family=Source+Code+Pro&family=Share+Tech+Mono&family=Ubuntu+Mono&family=VT323&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=JetBrains+Mono&family=Roboto+Mono&family=Source+Code+Pro&family=Share+Tech+Mono&family=Ubuntu+Mono&family=VT323&display=swap"
+        rel="stylesheet" />
     <script src="tailwind.js"></script>
     <link rel="stylesheet" href="tailwindx.css" />
     <link rel="stylesheet" href="sidepanel.css" />
-  </head>
-  <body class="flex flex-col items-center justify-center min-h-screen p-4">
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
     <div class="flex flex-wrap gap-2 max-h-screen text-base mt-[160px]">
-      <button type="button" id="googleBtn" class="search-toggle-btn">
-        Google
-      </button>
-      <button type="button" id="youtubeBtn" class="search-toggle-btn">
-        YouTube
-      </button>
-      <button
-        type="button"
-        id="duckduckgoBtn"
-        class="search-toggle-btn truncate"
-      >
-        DuckDuckGo
-      </button>
-      <button type="button" id="githubBtn" class="search-toggle-btn">
-        GitHub
-      </button>
-      <button type="button" id="bingBtn" class="search-toggle-btn">Bing</button>
-      <button type="button" id="braveBtn" class="search-toggle-btn">
-        Brave
-      </button>
-      <button type="button" id="yahooBtn" class="search-toggle-btn">
-        Yahoo
-      </button>
-      <button type="button" id="wikipediaBtn" class="search-toggle-btn">
-        Wikipedia
-      </button>
-      <button type="button" id="startpageBtn" class="search-toggle-btn">
-        Startpage
-      </button>
-      <button type="button" id="aolBtn" class="search-toggle-btn">AOL</button>
-      <button type="button" id="ecosiaBtn" class="search-toggle-btn">
-        Ecosia
-      </button>
+        <button type="button" id="googleBtn" class="search-toggle-btn">
+            Google
+        </button>
+        <button type="button" id="youtubeBtn" class="search-toggle-btn">
+            YouTube
+        </button>
+        <button type="button" id="duckduckgoBtn" class="search-toggle-btn truncate">
+            DuckDuckGo
+        </button>
+        <button type="button" id="githubBtn" class="search-toggle-btn">
+            GitHub
+        </button>
+        <button type="button" id="bingBtn" class="search-toggle-btn">
+            Bing
+        </button>
+        <button type="button" id="braveBtn" class="search-toggle-btn">
+            Brave
+        </button>
+        <button type="button" id="yahooBtn" class="search-toggle-btn">
+            Yahoo
+        </button>
+        <button type="button" id="wikipediaBtn" class="search-toggle-btn">
+            Wikipedia
+        </button>
+        <button type="button" id="startpageBtn" class="search-toggle-btn">
+            Startpage
+        </button>
+        <button type="button" id="aolBtn" class="search-toggle-btn">
+            AOL
+        </button>
+        <button type="button" id="ecosiaBtn" class="search-toggle-btn">
+            Ecosia
+        </button>
     </div>
 
     <div class="container max-w-2xl space-y-10 my-10 items-center">
-      <div class="text-center">
-        <h3
-          id="greeting"
-          class="text-3xl md:text-3xl font-extralight tracking-tight animate-fade-in-down"
-        ></h3>
-        <h4
-          id="currentTime"
-          class="text-3xl md:text-3xl mt-2 font-thin opacity-0 animate-fade-in-up"
-        ></h4>
-      </div>
+        <div class="text-center">
+            <h3 id="greeting" class="text-3xl md:text-3xl font-extralight tracking-tight animate-fade-in-down"></h3>
+            <h4 id="currentTime" class="text-3xl md:text-3xl mt-2 font-thin opacity-0 animate-fade-in-up"></h4>
+        </div>
 
-      <form
-        id="searchForm"
-        class="flex justify-center w-full"
-        data-search-url="https://www.google.com/search?q="
-      >
-        <input
-          autofocus
-          autocomplete="off"
-          type="search"
-          id="searchInput"
-          placeholder="Search with Google..."
-          class="search-input w-full p-4 rounded-full text-lg placeholder-gray-500 focus:outline-none"
-        />
-      </form>
+        <form id="searchForm" class="flex justify-center w-full" data-search-url="https://www.google.com/search?q=">
+            <input autofocus autocomplete="off" type="search" id="searchInput" placeholder="Search with Google..."
+                class="search-input w-full p-4 rounded-full text-lg placeholder-gray-500 focus:outline-none" />
+        </form>
     </div>
-    <div
-      id="bookmarkGrid"
-      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8 gap-4 bookmark-grid bookmark-container"
-    >
-      <button
-        id="addBookmarkBtn"
-        class="add-bookmark-btn p-4 rounded-xl text-center flex items-center justify-center flex-col"
-      >
-        <svg
-          class="w-8 h-8 mb-1"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 4v16m8-8H4"
-          ></path>
-        </svg>
-        <span class="text-sm font-semibold">Add Site</span>
-      </button>
+    <div id="bookmarkGrid"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8 gap-4 bookmark-grid bookmark-container">
+        <button id="addBookmarkBtn"
+            class="add-bookmark-btn p-4 rounded-xl text-center flex items-center justify-center flex-col">
+            <svg class="w-8 h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            <span class="text-sm font-semibold">Add Site</span>
+        </button>
     </div>
 
     <div id="hotcornerTL" class="hotcorner hotcorner-top-left"></div>
@@ -108,245 +79,183 @@
     <div id="hotcornerBR" class="hotcorner hotcorner-bottom-right"></div>
 
     <div id="hotcornerModalTL" class="fixed hidden hotcorner-modal top-left">
-      <div class="p-[10px] rounded-[30px] w-full">
-        <div id="hotcornerGridTL" class="grid grid-cols-4 gap-[8px]"></div>
-      </div>
+        <div class="p-[10px] rounded-[30px] w-full">
+            <div id="hotcornerGridTL" class="grid grid-cols-4 gap-[8px]"></div>
+        </div>
     </div>
 
     <div id="hotcornerModalTR" class="fixed hidden hotcorner-modal top-right">
-      <div class="p-[10px] rounded-[30px] w-full">
-        <div id="hotcornerGridTR" class="grid grid-cols-4 gap-[8px]"></div>
-      </div>
+        <div class="p-[10px] rounded-[30px] w-full">
+            <div id="hotcornerGridTR" class="grid grid-cols-4 gap-[8px]"></div>
+        </div>
     </div>
 
     <div id="hotcornerModalBL" class="fixed hidden hotcorner-modal bottom-left">
-      <div class="p-[10px] rounded-[30px] w-full">
-        <div id="hotcornerGridBL" class="grid grid-cols-4 gap-[8px]"></div>
-      </div>
+        <div class="p-[10px] rounded-[30px] w-full">
+            <div id="hotcornerGridBL" class="grid grid-cols-4 gap-[8px]"></div>
+        </div>
     </div>
 
-    <div
-      id="hotcornerModalBR"
-      class="fixed hidden hotcorner-modal bottom-right"
-    >
-      <div class="p-[10px] rounded-[30px] w-full">
-        <div id="hotcornerGridBR" class="grid grid-cols-4 gap-[8px]"></div>
-      </div>
+    <div id="hotcornerModalBR" class="fixed hidden hotcorner-modal bottom-right">
+        <div class="p-[10px] rounded-[30px] w-full">
+            <div id="hotcornerGridBR" class="grid grid-cols-4 gap-[8px]"></div>
+        </div>
     </div>
 
-    <div
-      id="bookmarkModal"
-      class="hidden fixed inset-0 bg-black bg-opacity-70 items-center justify-center flex p-4 transition-opacity duration-300"
-    >
-      <div class="modal-content p-4 rounded-xl w-full max-w-sm shadow-2xl">
-        <h2 class="text-2xl font-light mb-6 text-center text-gray-100">
-          Add New Bookmark
-        </h2>
-        <form id="bookmarkForm" class="space-y-4">
-          <div>
-            <label for="siteName" class="block text-gray-100 text-sm mb-1"
-              >Site Name</label
-            >
-            <input
-              type="text"
-              id="siteName"
-              placeholder="e.g., YouTube"
-              class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors"
-            />
-          </div>
-          <div>
-            <label for="siteUrl" class="block text-gray-100 text-sm mb-1"
-              >Site URL</label
-            >
-            <input
-              type="url"
-              id="siteUrl"
-              placeholder="e.g., https://www.youtube.com"
-              class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors"
-            />
-          </div>
-          <div class="flex justify-end space-x-3 mt-6">
-            <button
-              type="button"
-              id="cancelBtn"
-              class="bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-lg transition-colors"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              class="bg-blue-500 hover:bg-blue-400 px-5 py-2 rounded-lg transition-colors"
-            >
-              Add
-            </button>
-          </div>
-        </form>
-      </div>
+    <div id="bookmarkModal"
+        class="hidden fixed inset-0 bg-black bg-opacity-70 items-center justify-center flex p-4 transition-opacity duration-300">
+        <div class="modal-content p-4 rounded-xl w-full max-w-sm shadow-2xl">
+            <h2 class="text-2xl font-light mb-6 text-center text-gray-100">
+                Add New Bookmark
+            </h2>
+            <form id="bookmarkForm" class="space-y-4">
+                <div>
+                    <label for="siteName" class="block text-gray-100 text-sm mb-1">Site Name</label>
+                    <input type="text" id="siteName" placeholder="e.g., YouTube"
+                        class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors" />
+                </div>
+                <div>
+                    <label for="siteUrl" class="block text-gray-100 text-sm mb-1">Site URL</label>
+                    <input type="url" id="siteUrl" placeholder="e.g., https://www.youtube.com"
+                        class="w-full p-3 bg-gray-800 rounded-md text-white border border-transparent focus:border-blue-500 focus:outline-none transition-colors" />
+                </div>
+                <div class="flex justify-end space-x-3 mt-6">
+                    <button type="button" id="cancelBtn"
+                        class="bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded-lg transition-colors">
+                        Cancel
+                    </button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-400 px-5 py-2 rounded-lg transition-colors">
+                        Add
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-    <button
-      id="settingsBtn"
-      class="settings-Btn fixed top-0 right-0 px-0 py-0 rounded-xl text-3xl transition duration-300 ease-in-out"
-    >
-      ⚙
+    <button id="settingsBtn"
+        class="settings-Btn fixed top-0 right-0 px-0 py-0 rounded-xl text-3xl transition duration-300 ease-in-out">
+        ⚙
     </button>
     <div id="settingsOverlay"></div>
 
     <div id="settingsPanel" class="px-[30px] py-[30px] space-y-[20px] relative">
-      <h1 class="mb-[60px] text-[30px]">⚙ Settings</h1>
+        <h1 class="mb-[60px] text-[30px]">⚙ Settings</h1>
 
-      <h2>General</h2>
-      <div class="outer-div">
-        <div class="inner-Div">
-          <h3>Font</h3>
-          <select id="fontSelect" class="drop-down-select">
-            <option value="'Courier New', monospace">Courier New</option>
-            <option value="Arial, sans-serif">Arial</option>
-            <option value="'Times New Roman', serif">Times New Roman</option>
-            <option value="'Roboto', sans-serif">Roboto</option>
-            <option value="'Fira Mono', monospace">Fira Mono</option>
-            <option value="'Cascadia Mono', monospace">Cascadia Mono</option>
-            <option value="'Source Code Pro', monospace">
-              Source Code Pro
-            </option>
-            <option value="'JetBrains Mono', monospace">JetBrains Mono</option>
-            <option value="'Roboto Mono', monospace">Roboto Mono</option>
-            <option value="'Ubuntu Mono', monospace">Ubuntu Mono</option>
-            <option value="'Share Tech Mono', monospace">
-              Share Tech Mono
-            </option>
-            <option value="'VT323', monospace">VT323 (Retro Console)</option>
-            <option value="'Comic Sans MS', cursive, sans-serif">
-              Comic Sans MS
-            </option>
-            <option value="'Lucida Console', monospace">Lucida Console</option>
-            <option
-              value="'Palatino Linotype', 'Book Antiqua', Palatino, serif"
-            >
-              Palatino Linotype
-            </option>
-            <option value="'Georgia', serif">Georgia</option>
-            <option value="'Tahoma', sans-serif">Tahoma</option>
-            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
-            <option value="'Verdana', sans-serif">Verdana</option>
-            <option value="'Impact', sans-serif">Impact</option>
-            <option value="'Gill Sans', sans-serif">Gill Sans</option>
-            <option value="'Optima', sans-serif">Optima</option>
-            <option value="'Futura', sans-serif">Futura</option>
-            <option value="'Avenir', sans-serif">Avenir</option>
-          </select>
-        </div>
+        <h2>General</h2>
+        <div class="outer-div">
+            <div class="inner-Div">
+                <h3>Font</h3>
+                <select id="fontSelect" class="drop-down-select">
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="'Roboto', sans-serif">Roboto</option>
+                    <option value="'Fira Mono', monospace">Fira Mono</option>
+                    <option value="'Cascadia Mono', monospace">Cascadia Mono</option>
+                    <option value="'Source Code Pro', monospace">Source Code Pro</option>
+                    <option value="'JetBrains Mono', monospace">JetBrains Mono</option>
+                    <option value="'Roboto Mono', monospace">Roboto Mono</option>
+                    <option value="'Ubuntu Mono', monospace">Ubuntu Mono</option>
+                    <option value="'Share Tech Mono', monospace">Share Tech Mono</option>
+                    <option value="'VT323', monospace">VT323 (Retro Console)</option>
+                    <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans MS</option>
+                    <option value="'Lucida Console', monospace">Lucida Console</option>
+                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Palatino Linotype</option>
+                    <option value="'Georgia', serif">Georgia</option>
+                    <option value="'Tahoma', sans-serif">Tahoma</option>
+                    <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+                    <option value="'Verdana', sans-serif">Verdana</option>
+                    <option value="'Impact', sans-serif">Impact</option>
+                    <option value="'Gill Sans', sans-serif">Gill Sans</option>
+                    <option value="'Optima', sans-serif">Optima</option>
+                    <option value="'Futura', sans-serif">Futura</option>
+                    <option value="'Avenir', sans-serif">Avenir</option>
+                </select>
+            </div>
 
-        <div class="inner-Div">
-          <h3>Size</h3>
-          <select id="fontSizeSelect" class="drop-down-select">
-            <option value="12px">12px</option>
-            <option value="13px">13px</option>
-            <option value="14px">14px</option>
-            <option value="15px">15px</option>
-            <option value="16px">16px(default)</option>
-            <option value="17px">17px</option>
-            <option value="18px">18px</option>
-            <option value="19px">19px</option>
-            <option value="20px">20px</option>
-            <option value="22px">22px</option>
-            <option value="24px">24px</option>
-          </select>
-        </div>
-        <div class="inner-Div">
-          <h3>Palette</h3>
-          <button id="randomizeBox" class="butt-sett rounded-lg">
-            <svg
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.4697 9.46967C16.1768 9.76256 16.1768 10.2374 16.4697 10.5303C16.7626 10.8232 17.2374 10.8232 17.5303 10.5303L16.4697 9.46967ZM19.5303 8.53033C19.8232 8.23744 19.8232 7.76256 19.5303 7.46967C19.2374 7.17678 18.7626 7.17678 18.4697 7.46967L19.5303 8.53033ZM18.4697 8.53033C18.7626 8.82322 19.2374 8.82322 19.5303 8.53033C19.8232 8.23744 19.8232 7.76256 19.5303 7.46967L18.4697 8.53033ZM17.5303 5.46967C17.2374 5.17678 16.7626 5.17678 16.4697 5.46967C16.1768 5.76256 16.1768 6.23744 16.4697 6.53033L17.5303 5.46967ZM19 8.75C19.4142 8.75 19.75 8.41421 19.75 8C19.75 7.58579 19.4142 7.25 19 7.25V8.75ZM16.7 8L16.6993 8.75H16.7V8ZM12.518 10.252L13.1446 10.6642L13.1446 10.6642L12.518 10.252ZM10.7414 11.5878C10.5138 11.9338 10.6097 12.3989 10.9558 12.6266C11.3018 12.8542 11.7669 12.7583 11.9946 12.4122L10.7414 11.5878ZM11.9946 12.4122C12.2222 12.0662 12.1263 11.6011 11.7802 11.3734C11.4342 11.1458 10.9691 11.2417 10.7414 11.5878L11.9946 12.4122ZM10.218 13.748L9.59144 13.3358L9.59143 13.3358L10.218 13.748ZM6.041 16V16.75H6.04102L6.041 16ZM5 15.25C4.58579 15.25 4.25 15.5858 4.25 16C4.25 16.4142 4.58579 16.75 5 16.75V15.25ZM11.9946 11.5878C11.7669 11.2417 11.3018 11.1458 10.9558 11.3734C10.6097 11.6011 10.5138 12.0662 10.7414 12.4122L11.9946 11.5878ZM12.518 13.748L13.1446 13.3358L13.1446 13.3358L12.518 13.748ZM16.7 16V15.25H16.6993L16.7 16ZM19 16.75C19.4142 16.75 19.75 16.4142 19.75 16C19.75 15.5858 19.4142 15.25 19 15.25V16.75ZM10.7414 12.4122C10.9691 12.7583 11.4342 12.8542 11.7802 12.6266C12.1263 12.3989 12.2222 11.9338 11.9946 11.5878L10.7414 12.4122ZM10.218 10.252L9.59143 10.6642L9.59144 10.6642L10.218 10.252ZM6.041 8L6.04102 7.25H6.041V8ZM5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75V7.25ZM17.5303 13.4697C17.2374 13.1768 16.7626 13.1768 16.4697 13.4697C16.1768 13.7626 16.1768 14.2374 16.4697 14.5303L17.5303 13.4697ZM18.4697 16.5303C18.7626 16.8232 19.2374 16.8232 19.5303 16.5303C19.8232 16.2374 19.8232 15.7626 19.5303 15.4697L18.4697 16.5303ZM19.5303 16.5303C19.8232 16.2374 19.8232 15.7626 19.5303 15.4697C19.2374 15.1768 18.7626 15.1768 18.4697 15.4697L19.5303 16.5303ZM16.4697 17.4697C16.1768 17.7626 16.1768 18.2374 16.4697 18.5303C16.7626 18.8232 17.2374 18.8232 17.5303 18.5303L16.4697 17.4697ZM17.5303 10.5303L19.5303 8.53033L18.4697 7.46967L16.4697 9.46967L17.5303 10.5303ZM19.5303 7.46967L17.5303 5.46967L16.4697 6.53033L18.4697 8.53033L19.5303 7.46967ZM19 7.25H16.7V8.75H19V7.25ZM16.7007 7.25C14.7638 7.24812 12.956 8.22159 11.8914 9.8398L13.1446 10.6642C13.9314 9.46813 15.2676 8.74861 16.6993 8.75L16.7007 7.25ZM11.8914 9.83979L10.7414 11.5878L11.9946 12.4122L13.1446 10.6642L11.8914 9.83979ZM10.7414 11.5878L9.59144 13.3358L10.8446 14.1602L11.9946 12.4122L10.7414 11.5878ZM9.59143 13.3358C8.80541 14.5306 7.47115 15.25 6.04098 15.25L6.04102 16.75C7.97596 16.7499 9.78113 15.7767 10.8446 14.1602L9.59143 13.3358ZM6.041 15.25H5V16.75H6.041V15.25ZM10.7414 12.4122L11.8914 14.1602L13.1446 13.3358L11.9946 11.5878L10.7414 12.4122ZM11.8914 14.1602C12.956 15.7784 14.7638 16.7519 16.7007 16.75L16.6993 15.25C15.2676 15.2514 13.9314 14.5319 13.1446 13.3358L11.8914 14.1602ZM16.7 16.75H19V15.25H16.7V16.75ZM11.9946 11.5878L10.8446 9.83979L9.59144 10.6642L10.7414 12.4122L11.9946 11.5878ZM10.8446 9.8398C9.78113 8.2233 7.97596 7.25005 6.04102 7.25L6.04098 8.75C7.47115 8.75004 8.80541 9.46939 9.59143 10.6642L10.8446 9.8398ZM6.041 7.25H5V8.75H6.041V7.25ZM16.4697 14.5303L18.4697 16.5303L19.5303 15.4697L17.5303 13.4697L16.4697 14.5303ZM18.4697 15.4697L16.4697 17.4697L17.5303 18.5303L19.5303 16.5303L18.4697 15.4697Z"
-                fill="#000000"
-              />
-            </svg>
-          </button>
-          <select id="paletteSelect" class="drop-down-select"></select>
-        </div>
-      </div>
-
-      <h2>Bookmarks</h2>
-      <div class="outer-div-bookm">
-        <div class="inner-div-bookm">
-          <h3>Main Bookmarks</h3>
-          <ul id="mainList" class="inner-ul"></ul>
+            <div class="inner-Div">
+                <h3>Size</h3>
+                <select id="fontSizeSelect" class="drop-down-select">
+                    <option value="12px">12px</option>
+                    <option value="13px">13px</option>
+                    <option value="14px">14px</option>
+                    <option value="15px">15px</option>
+                    <option value="16px">16px(default)</option>
+                    <option value="17px">17px</option>
+                    <option value="18px">18px</option>
+                    <option value="19px">19px</option>
+                    <option value="20px">20px</option>
+                    <option value="22px">22px</option>
+                    <option value="24px">24px</option>
+                </select>
+            </div>
+            <div class="inner-Div">
+                <h3>Palette</h3>
+                <button id="randomizeBox" class="butt-sett rounded-lg">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.4697 9.46967C16.1768 9.76256 16.1768 10.2374 16.4697 10.5303C16.7626 10.8232 17.2374 10.8232 17.5303 10.5303L16.4697 9.46967ZM19.5303 8.53033C19.8232 8.23744 19.8232 7.76256 19.5303 7.46967C19.2374 7.17678 18.7626 7.17678 18.4697 7.46967L19.5303 8.53033ZM18.4697 8.53033C18.7626 8.82322 19.2374 8.82322 19.5303 8.53033C19.8232 8.23744 19.8232 7.76256 19.5303 7.46967L18.4697 8.53033ZM17.5303 5.46967C17.2374 5.17678 16.7626 5.17678 16.4697 5.46967C16.1768 5.76256 16.1768 6.23744 16.4697 6.53033L17.5303 5.46967ZM19 8.75C19.4142 8.75 19.75 8.41421 19.75 8C19.75 7.58579 19.4142 7.25 19 7.25V8.75ZM16.7 8L16.6993 8.75H16.7V8ZM12.518 10.252L13.1446 10.6642L13.1446 10.6642L12.518 10.252ZM10.7414 11.5878C10.5138 11.9338 10.6097 12.3989 10.9558 12.6266C11.3018 12.8542 11.7669 12.7583 11.9946 12.4122L10.7414 11.5878ZM11.9946 12.4122C12.2222 12.0662 12.1263 11.6011 11.7802 11.3734C11.4342 11.1458 10.9691 11.2417 10.7414 11.5878L11.9946 12.4122ZM10.218 13.748L9.59144 13.3358L9.59143 13.3358L10.218 13.748ZM6.041 16V16.75H6.04102L6.041 16ZM5 15.25C4.58579 15.25 4.25 15.5858 4.25 16C4.25 16.4142 4.58579 16.75 5 16.75V15.25ZM11.9946 11.5878C11.7669 11.2417 11.3018 11.1458 10.9558 11.3734C10.6097 11.6011 10.5138 12.0662 10.7414 12.4122L11.9946 11.5878ZM12.518 13.748L13.1446 13.3358L13.1446 13.3358L12.518 13.748ZM16.7 16V15.25H16.6993L16.7 16ZM19 16.75C19.4142 16.75 19.75 16.4142 19.75 16C19.75 15.5858 19.4142 15.25 19 15.25V16.75ZM10.7414 12.4122C10.9691 12.7583 11.4342 12.8542 11.7802 12.6266C12.1263 12.3989 12.2222 11.9338 11.9946 11.5878L10.7414 12.4122ZM10.218 10.252L9.59143 10.6642L9.59144 10.6642L10.218 10.252ZM6.041 8L6.04102 7.25H6.041V8ZM5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75V7.25ZM17.5303 13.4697C17.2374 13.1768 16.7626 13.1768 16.4697 13.4697C16.1768 13.7626 16.1768 14.2374 16.4697 14.5303L17.5303 13.4697ZM18.4697 16.5303C18.7626 16.8232 19.2374 16.8232 19.5303 16.5303C19.8232 16.2374 19.8232 15.7626 19.5303 15.4697L18.4697 16.5303ZM19.5303 16.5303C19.8232 16.2374 19.8232 15.7626 19.5303 15.4697C19.2374 15.1768 18.7626 15.1768 18.4697 15.4697L19.5303 16.5303ZM16.4697 17.4697C16.1768 17.7626 16.1768 18.2374 16.4697 18.5303C16.7626 18.8232 17.2374 18.8232 17.5303 18.5303L16.4697 17.4697ZM17.5303 10.5303L19.5303 8.53033L18.4697 7.46967L16.4697 9.46967L17.5303 10.5303ZM19.5303 7.46967L17.5303 5.46967L16.4697 6.53033L18.4697 8.53033L19.5303 7.46967ZM19 7.25H16.7V8.75H19V7.25ZM16.7007 7.25C14.7638 7.24812 12.956 8.22159 11.8914 9.8398L13.1446 10.6642C13.9314 9.46813 15.2676 8.74861 16.6993 8.75L16.7007 7.25ZM11.8914 9.83979L10.7414 11.5878L11.9946 12.4122L13.1446 10.6642L11.8914 9.83979ZM10.7414 11.5878L9.59144 13.3358L10.8446 14.1602L11.9946 12.4122L10.7414 11.5878ZM9.59143 13.3358C8.80541 14.5306 7.47115 15.25 6.04098 15.25L6.04102 16.75C7.97596 16.7499 9.78113 15.7767 10.8446 14.1602L9.59143 13.3358ZM6.041 15.25H5V16.75H6.041V15.25ZM10.7414 12.4122L11.8914 14.1602L13.1446 13.3358L11.9946 11.5878L10.7414 12.4122ZM11.8914 14.1602C12.956 15.7784 14.7638 16.7519 16.7007 16.75L16.6993 15.25C15.2676 15.2514 13.9314 14.5319 13.1446 13.3358L11.8914 14.1602ZM16.7 16.75H19V15.25H16.7V16.75ZM11.9946 11.5878L10.8446 9.83979L9.59144 10.6642L10.7414 12.4122L11.9946 11.5878ZM10.8446 9.8398C9.78113 8.2233 7.97596 7.25005 6.04102 7.25L6.04098 8.75C7.47115 8.75004 8.80541 9.46939 9.59143 10.6642L10.8446 9.8398ZM6.041 7.25H5V8.75H6.041V7.25ZM16.4697 14.5303L18.4697 16.5303L19.5303 15.4697L17.5303 13.4697L16.4697 14.5303ZM18.4697 15.4697L16.4697 17.4697L17.5303 18.5303L19.5303 16.5303L18.4697 15.4697Z"
+                            fill="#000000" />
+                    </svg>
+                </button>
+                <select id="paletteSelect" class="drop-down-select"></select>
+            </div>
         </div>
 
-        <div class="inner-div-bookm">
-          <h3>↖ Hotcorner TL</h3>
-          <ul id="hotcornerTLList" class="inner-ul"></ul>
+        <h2>Bookmarks</h2>
+        <div class="outer-div-bookm">
+            <div class="inner-div-bookm">
+                <h3>Main Bookmarks</h3>
+                <ul id="mainList" class="inner-ul"></ul>
+            </div>
+
+            <div class="inner-div-bookm">
+                <h3>↖ Hotcorner TL</h3>
+                <ul id="hotcornerTLList" class="inner-ul"></ul>
+            </div>
+
+            <div class="inner-div-bookm">
+                <h3>↗ Hotcorner TR</h3>
+                <ul id="hotcornerTRList" class="inner-ul"></ul>
+            </div>
+            <div class="inner-div-bookm">
+                <h3>↙ Hotcorner BL</h3>
+                <ul id="hotcornerBLList" class="inner-ul"></ul>
+            </div>
+
+            <div class="inner-div-bookm">
+                <h3>↘ Hotcorner BR</h3>
+                <ul id="hotcornerBRList" class="inner-ul"></ul>
+            </div>
         </div>
 
-        <div class="inner-div-bookm">
-          <h3>↗ Hotcorner TR</h3>
-          <ul id="hotcornerTRList" class="inner-ul"></ul>
-        </div>
-        <div class="inner-div-bookm">
-          <h3>↙ Hotcorner BL</h3>
-          <ul id="hotcornerBLList" class="inner-ul"></ul>
+        <h2>Import / Export Settings</h2>
+        <div class="flex flex-col items-center space-y-[8px]">
+            <label for="importBookmarks"
+                class="flex flex-col items-center justify-center w-1/2 h-[150px] border-[2px] border-gray-800 border-dashed rounded-[20px] cursor-pointer bg-gray-700 hover:bg-gray-900 transition-all ease-in-out hover:border-zinc-400 hover:scale-105">
+                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                    <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                    </svg>
+                    <p class="mb-[8px] text-[14px] text-gray-500 dark:text-gray-400">
+                        <span class="font-semibold">Click to upload</span> <br />
+                        or drag and drop
+                    </p>
+                </div>
+                <input type="file" id="importBookmarks" accept=".json, .html"
+                    class="w-full bg-gray-800 p-2 rounded mb-2 hidden" />
+            </label>
+            <button id="exportBookmarks"
+                class="w-1/2 transition-all ease-in-out hover:scale-105 px-[20x] py-[6px] bg-purple-700 hover:bg-purple-600 rounded-[8px]">
+                ⬇ Export All
+            </button>
         </div>
 
-        <div class="inner-div-bookm">
-          <h3>↘ Hotcorner BR</h3>
-          <ul id="hotcornerBRList" class="inner-ul"></ul>
-        </div>
-      </div>
-
-      <h2>Import / Export Settings</h2>
-      <div class="flex flex-col items-center space-y-[8px]">
-        <label
-          for="importBookmarks"
-          class="flex flex-col items-center justify-center w-1/2 h-[150px] border-[2px] border-gray-800 border-dashed rounded-[20px] cursor-pointer bg-gray-700 hover:bg-gray-900 transition-all ease-in-out hover:border-zinc-400 hover:scale-105"
-        >
-          <div class="flex flex-col items-center justify-center pt-5 pb-6">
-            <svg
-              class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 20 16"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-              />
-            </svg>
-            <p class="mb-[8px] text-[14px] text-gray-500 dark:text-gray-400">
-              <span class="font-semibold">Click to upload</span> <br />
-              or drag and drop
-            </p>
-          </div>
-          <input
-            type="file"
-            id="importBookmarks"
-            accept=".json, .html"
-            class="w-full bg-gray-800 p-2 rounded mb-2 hidden"
-          />
-        </label>
-        <button
-          id="exportBookmarks"
-          class="w-1/2 transition-all ease-in-out hover:scale-105 px-[20x] py-[6px] bg-purple-700 hover:bg-purple-600 rounded-[8px]"
-        >
-          ⬇ Export All
+        <button id="closeSettings"
+            class="w-[80px] ml-[320px] text-red-500 bottom-0 sticky p-[8px] opacity-50 bg-gray-700 hover:bg-gray-600 rounded-[20px] transition-all ease-in-out hover:opacity-100 hover:scale-105">
+            Close
         </button>
-      </div>
-
-      <button
-        id="closeSettings"
-        class="w-[80px] ml-[320px] text-red-500 bottom-0 sticky p-[8px] opacity-50 bg-gray-700 hover:bg-gray-600 rounded-[20px] transition-all ease-in-out hover:opacity-100 hover:scale-105"
-      >
-        Close
-      </button>
     </div>
 
     <script src="focus.js"></script>
@@ -359,5 +268,6 @@
     <script src="color.js"></script>
     <script src="bookmarkParser.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
