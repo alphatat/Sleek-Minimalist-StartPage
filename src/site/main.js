@@ -97,10 +97,8 @@ function createBookmarkElement(name, url, parentGrid, isHotcorner = false) {
         span.classList.add("text-5xl", "m-2");
       } else if (nameLen < 7) {
         span.classList.add("text-3xl", "m-2");
-      } else {
-        span.classList.add("text-2xl", "m-2");
-        bookmark.classList.remove("items-center");
       }
+
     } else {
       if (nameLen > 2) {
         const str = name.slice(0, 2);
