@@ -37,7 +37,7 @@
 5. browse the folder
 
 #### Firefox
-[![Download SleekStartpage for Firefox](https://camo.githubusercontent.com/d02ee2ea5e34d9bf24de696f78af5452f37b7735e91c1f6adfe6e5e8d2206ce5/68747470733a2f2f6c6162656c732e7461686f652e62652f66697265666f785f646f776e6c6f61645f6461726b2e737667)](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
+[<img src="https://labels.tahoe.be/firefox_download_dark.svg" height="53" alt="Download Bonjourr for Firefox">](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
 1. download the file [sleekstartpage.xpi](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
 2. From the top right Three-Stripe menu go to Extensions and themes
 3. click the Gear icon in the right of "Manage Your Extensions" text
