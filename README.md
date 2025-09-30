@@ -6,7 +6,7 @@
 
 | Firefox  |  Chrome == Brave == Edge  | 
 |:-----------------:|:---------------------------------:|
-| [Download](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)  |       |
+| [Download](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.3.xpi)  |       |
 | [Read Instructions](#Firefox)|[Read Instructions](#Chrome)|
 
 ## Description
@@ -37,8 +37,8 @@
 5. browse the folder
 
 #### Firefox
-[<img src="https://labels.tahoe.be/firefox_download_dark.svg" height="53" alt="Download Bonjourr for Firefox">](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
-1. download the file [sleekstartpage.xpi](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
+[<img src="https://labels.tahoe.be/firefox_download_dark.svg" height="53" alt="Download Bonjourr for Firefox">](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.3.xpi)
+1. download the file [sleekstartpage.xpi](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.3.xpi)
 2. From the top right Three-Stripe menu go to Extensions and themes
 3. click the Gear icon in the right of "Manage Your Extensions" text
 4. click Install addon from file
