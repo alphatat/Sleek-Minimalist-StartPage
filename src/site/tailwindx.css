@@ -32,7 +32,7 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(5px);
   }
   to {
     opacity: 1;
@@ -94,20 +94,22 @@ body {
   border: 2px dashed var(--bg-color);
 }
 
-.modal-content {
-  background-color: var(--btn-bg-color);
-  animation: slideUp 0.4s ease-out;
-}
+
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.modal-content {
+  background-color: var(--btn-bg-color);
+  animation: slideUp 0.4s ease-out;
 }
 
 /* Responsive adjustments */
@@ -154,6 +156,14 @@ body {
   animation: fadeInUp 2s ease-out 0.5s forwards; /* 'forwards' keeps the final state */
 }
 
+#searchInDiv {
+  animation: fadeInDown 1s ease-in;
+}
+
+#bookmarkGrid {
+  animation: fadeIn 1s ease-in;
+}
+
 .search-toggle-btn {
   padding: 8px 16px;
   border-radius: 9999px; /* This makes it pill-shaped */
@@ -182,8 +192,8 @@ body {
 /* New Styles for Hotcorners */
 .hotcorner {
   position: fixed;
-  width: 140px; /* Size of the activation area */
-  height: 140px;
+  width: 150px; /* Size of the activation area */
+  height: 150px;
   z-index: 50; /* Below modals */
   opacity: 0;
 }
