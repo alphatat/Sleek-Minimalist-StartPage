@@ -94,9 +94,9 @@ function createBookmarkElement(name, url, parentGrid, isHotcorner = false) {
       if (nameLen > 6) {
         const str = name.slice(0, 2);
         span.textContent = str.toUpperCase();
-        span.classList.add("text-5xl", "m-2");
+        span.classList.add("text-5xl", "my-2", "mx-3");
       } else if (nameLen < 7) {
-        span.classList.add("text-3xl", "m-2");
+        span.classList.add("text-3xl", "my-2", "mx-3");
       }
 
     } else {
