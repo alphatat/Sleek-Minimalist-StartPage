@@ -13,35 +13,35 @@ const searchEngineConfig = {
     placeholder: "Search DuckDuckGo...",
   },
   bingBtn: {
-    url: "https://github.com/search?q=",
+    url: "https://www.bing.com/search?q=",
     placeholder: "Search with Bing...",
   },
   braveBtn: {
-    url: "https://www.bing.com/search?q=",
+    url: "https://search.brave.com/search?q=",
     placeholder: "Search with Brave...",
   },
   yahooBtn: {
-    url: "https://search.brave.com/search?q=",
+    url: "https://search.yahoo.com/search?p=",
     placeholder: "Search Yahoo...",
   },
   wikipediaBtn: {
-    url: "https://search.yahoo.com/search?p=",
+    url: "https://en.wikipedia.org/w/index.php?search=",
     placeholder: "Search Wikipedia...",
   },
   startpageBtn: {
-    url: "https://en.wikipedia.org/w/index.php?search=",
+    url: "https://www.startpage.com/do/dsearch?query=",
     placeholder: "Search Startpage...",
   },
   aolBtn: {
-    url: "https://www.startpage.com/do/dsearch?query=",
+    url: "https://search.aol.com/aol/search?q=",
     placeholder: "Search AOL...",
   },
   ecosiaBtn: {
-    url: "https://search.aol.com/aol/search?q=",
+    url: "https://www.ecosia.org/search?q=",
     placeholder: "Search Ecosia...",
   },
   githubBtn: {
-    url: "https://www.ecosia.org/search?q=",
+    url: "https://github.com/search?q=",
     placeholder: "Search GitHub...",
   },
   googleBtn: {
