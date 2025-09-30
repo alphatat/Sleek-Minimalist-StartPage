@@ -3,12 +3,12 @@
 <img src="https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/main/gifs/start.gif" width="768" height="392">
 
 ## Install Now
-+----------+----------+
-| Firefox | Chrome == Brave == Edge | 
-+----------+----------+
-| [![Download SleekStartpage for Firefox](https://camo.githubusercontent.com/d02ee2ea5e34d9bf24de696f78af5452f37b7735e91c1f6adfe6e5e8d2206ce5/68747470733a2f2f6c6162656c732e7461686f652e62652f66697265666f785f646f776e6c6f61645f6461726b2e737667)](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)  |    |
-| [Read Instructions](#### Firefox) | [Read Instructions](#### Chrome) |
-+----------+----------+
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Firefox                                                                                                                     |    Chrome == Brave == Edge       | 
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| [Download](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)  |                                  |
+| [Read Instructions](#### Firefox)                                                                                           | [Read Instructions](#### Chrome) |
++-----------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 ## Description
 
 ### An Browser Extension that gives you a minimalist and keyboard-powered speed-dial startpage
