@@ -4,11 +4,7 @@
 
 ## Description
 
-### A Firefox and Chrome addon that gives you a minimalist and keyboard-powered speed-dial startpage
-
-## Discription
-
-### A firefox and chrome addon that gives you a minimalist and keyboard powered speeddial startpage
+### An Browser Extension that gives you a minimalist and keyboard-powered speed-dial startpage
 
 ## Features
 
