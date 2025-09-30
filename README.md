@@ -2,6 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/main/gifs/start.gif" width="768" height="392">
 
+## Install Now
++----------+----------+
+| Firefox | Chrome == Brave == Edge | 
++----------+----------+
+| [![Download SleekStartpage for Firefox](https://camo.githubusercontent.com/d02ee2ea5e34d9bf24de696f78af5452f37b7735e91c1f6adfe6e5e8d2206ce5/68747470733a2f2f6c6162656c732e7461686f652e62652f66697265666f785f646f776e6c6f61645f6461726b2e737667)](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)  |    |
+| [Read Instructions](#### Firefox) | [Read Instructions](#### Chrome) |
++----------+----------+
 ## Description
 
 ### An Browser Extension that gives you a minimalist and keyboard-powered speed-dial startpage
@@ -19,16 +26,26 @@
     - search string auto-generated to save time
 - import your bookmarks from html and also keep your settings safe by exporting
 
-## Usage
-
-- Chrome
-    1. locally download the source code
-    2. copy the contents in the src to a suitable folder
-    3. turn on developer mode in chrome extenstions
-    4. load unpacked from the folder
-- Firefox
-    
 ## Setup
+
+#### Chrome
+(or Brave or Edge)
+1. locally download the source code
+2. copy the contents in the src to a suitable folder
+3. turn on developer mode in chrome (or brave or edge) extenstions
+4. click load unpacked 
+5. browse the folder
+
+#### Firefox
+[![Download SleekStartpage for Firefox](https://camo.githubusercontent.com/d02ee2ea5e34d9bf24de696f78af5452f37b7735e91c1f6adfe6e5e8d2206ce5/68747470733a2f2f6c6162656c732e7461686f652e62652f66697265666f785f646f776e6c6f61645f6461726b2e737667)](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
+1. download the file [sleekstartpage.xpi](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.2.xpi)
+2. From the top right Three-Stripe menu go to Extensions and themes
+3. click the Gear icon in the right of "Manage Your Extensions" text
+4. click Install addon from file
+5. Browse and select the dpwnloaded .xpi file
+   
+    
+## Usage
 - There is a settings button at the top right
     - use it and edit some colors the first time to make it work properly
     - change colors
