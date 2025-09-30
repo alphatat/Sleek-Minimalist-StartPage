@@ -91,13 +91,12 @@ function createBookmarkElement(name, url, parentGrid, isHotcorner = false) {
     if (!isHotcorner) {
       span.classList.add("font-extrabold");
 
-      if (nameLen > 7) {
+      if (nameLen > 6) {
         const str = name.slice(0, 2);
-        span.textContent = str[0].toUpperCase() + str[1];
-        nameLen = str.length;
-      }
-      if (nameLen < 6) {
-        span.classList.add("text-4xl", "m-3");
+        span.textContent = str.toUpperCase();
+        span.classList.add("text-5xl", "m-2");
+      } else if (nameLen < 7) {
+        span.classList.add("text-3xl", "m-2");
       } else {
         span.classList.add("text-2xl", "m-2");
         bookmark.classList.remove("items-center");
