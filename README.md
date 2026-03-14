@@ -1,12 +1,15 @@
 # Sleek StartPage
 
 <img src="https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/main/gifs/start.gif" width="768" height="392">
+##Support Me
+
+[Support kori](https://supportkori.com/alphatat)
 
 ## Install Now
 
 | Firefox  |  Chrome == Brave == Edge  | 
 |:-----------------:|:---------------------------------:|
-| [Download](https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/refs/heads/main/sleekstartpage-0.0.3.xpi)  |       |
+| [Firefox Web Store](https://addons.mozilla.org/en-US/firefox/addon/sleekstartpage/)  |       |
 | [Read Instructions](#Firefox)|[Read Instructions](#Chrome)|
 
 ## Description
