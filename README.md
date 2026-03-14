@@ -1,7 +1,8 @@
 # Sleek StartPage
 
 <img src="https://raw.githubusercontent.com/alphatat/Sleek-Minimalist-StartPage/main/gifs/start.gif" width="768" height="392">
-##Support Me
+
+## Support Me
 
 [Support kori](https://supportkori.com/alphatat)
 
